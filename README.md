@@ -17,7 +17,7 @@
 
 **Raw data files \[Optional\]:**
 
-- Only required to regenerated the curated data files (in [/Data](Data/)) used to produce the results of the paper. Available on Zenodo:
+- Only required the data files used to produce the results of the paper. Available on Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21677183.svg)](https://doi.org/10.5281/zenodo.21677183)
 
