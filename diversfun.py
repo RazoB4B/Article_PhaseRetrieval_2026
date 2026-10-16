@@ -254,7 +254,7 @@ def Harmonics(_Imgs, _Nharms=4, _Npad=1, _Sym=True, _axis=0, _Nper=1):
 
 def Norm(array):
     '''
-    Normalize a given 2D array to the mean of its amplitude
+    Normalize a given 2D array to the mean of its energy
 
     Parameters
     ----------
@@ -266,7 +266,7 @@ def Norm(array):
     2D float array : A 2D array indentical to the original but
                      normalized
     '''
-    return array/np.mean(np.abs(array))
+    return array/np.sqrt(np.mean(np.abs(array)**))
 
 def GetFarField(array, Npad=5, WinSize=None, Scale=None):
     '''
