@@ -266,7 +266,7 @@ def Norm(array):
     2D float array : A 2D array indentical to the original but
                      normalized
     '''
-    return array/np.sqrt(np.mean(np.abs(array)**))
+    return array/np.sqrt(np.mean(np.abs(array)**2))
 
 def GetFarField(array, Npad=5, WinSize=None, Scale=None):
     '''
