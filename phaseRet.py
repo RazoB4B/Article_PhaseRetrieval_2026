@@ -185,7 +185,7 @@ def Resample_Torch(tensor, scale):
 
 def Norm(tensor):
     '''
-    Normalize a given 2D tensor to the mean of its amplitude
+    Normalize a given 2D tensor to the mean of its energy
 
     Parameters
     ----------
@@ -197,7 +197,7 @@ def Norm(tensor):
     2D float tensor : A 2D tensor indentical to the original but
                       normalized
     '''
-    return tensor/torch.mean(torch.abs(tensor))
+    return tensor/torch.sqrt(torch.mean(torch.abs(tensor)**2))
 
 
 def L2_Norm_Torch(x, y):
